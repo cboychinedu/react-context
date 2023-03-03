@@ -8,6 +8,7 @@ import FormField from "./Component/Forms";
 import { Component, Fragment } from "react";
 import { AuthContextProvider } from "./Contexts/AuthContext";
 import { ThemeContextProvider } from "./Contexts/ThemeContext";
+import TodoList from "./Component/ContextHook";
 
 
 // Creating the App UI component
@@ -45,6 +46,9 @@ class App extends Component {
 
                     {/* Adding the Forms  */}
                     <FormField /> 
+
+                    {/* Todo */}
+                    <TodoList /> 
         
                     {/* Adding pagnations */}
                   < PaginationExampleCompact /> 
